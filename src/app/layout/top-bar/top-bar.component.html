@@ -1,0 +1,39 @@
+<div class="wrapper">
+  <div class="brand-group" routerLink="/">
+    <img src="icons/menu.png" alt="" class="menu link" />
+    <img src="images/logo.png" alt="" class="logo link" />
+    <div class="brand-name link">e-shopping</div>
+  </div>
+  <div class="search-group">
+    <input
+      type="text"
+      class="search-input"
+      placeholder="search"
+      aria-label="Search products"
+    />
+    <div class="search-icon-wrapper link">
+      <img src="icons/search.png" alt="" class="search-icon" />
+    </div>
+  </div>
+  <div class="user-group">
+    <img src="icons/user.png" alt="user profile" class="user-icon link" />
+    <div class="cart" routerLink="/cart">
+      <img src="icons/cart.png" alt="" class="user-icon link" />
+      <span class="cart-count">{{ 0 }}</span>
+      <span class="cart-total">{{ 0 | number : "1.2-2" }}</span>
+    </div>
+  </div>
+</div>
+<div class="mobile-wrapper">
+  <div class="search-group mobile">
+    <input
+      type="search"
+      class="search-input"
+      placeholder="Search"
+      aria-label="Search products"
+    />
+    <div class="search-icon-wrapper link">
+      <img src="icons/search.png" alt="" class="search-icon" />
+    </div>
+  </div>
+</div>
