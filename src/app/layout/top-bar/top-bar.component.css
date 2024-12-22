@@ -52,7 +52,8 @@
 .brand-name {
   text-wrap: nowrap;
   cursor: pointer;
-  margin-left: 4px;
+  margin-right: 5px;
+  margin-left: 2px;
   padding: 30px 0px;
 }
 .user-group {
