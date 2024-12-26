@@ -1,5 +1,7 @@
+import { CartService } from '../../../../service/cart.service';
 import { Component } from '@angular/core';
 import { PRODUCTS } from '../../../../data/products.data';
+import { Product } from '../../../../models/product.model';
 import { ProductCardComponent } from '../product-card/product-card.component';
 
 @Component({
@@ -11,4 +13,16 @@ import { ProductCardComponent } from '../product-card/product-card.component';
 })
 export class ProductsComponent {
   products = PRODUCTS;
+
+  constructor(private cartService: CartService) {}
+
+  onAdd(product: Product) {
+    this.cartService.addItem({
+      id: product.id,
+      name: product.name,
+      imageUrl: product.imageUrl,
+      price: product.price,
+      quantity: 1,
+    });
+  }
 }
