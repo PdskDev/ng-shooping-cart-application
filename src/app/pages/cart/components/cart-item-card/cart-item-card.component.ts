@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { CartItem } from '../../../../models/cart-item.model';
+import { QuantityStepperComponent } from '../quantity-stepper/quantity-stepper.component';
 
 @Component({
   selector: 'app-cart-item-card',
   standalone: true,
-  imports: [],
+  imports: [QuantityStepperComponent],
   templateUrl: './cart-item-card.component.html',
   styleUrl: './cart-item-card.component.css',
 })

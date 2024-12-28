@@ -19,7 +19,6 @@ export class CartComponent {
 
   onItemQuantityUpdate(quantity: number, id: string) {
     let increase = true;
-
     const existItem = this.items().find((i) => i.id === id);
 
     if (quantity < existItem!.quantity) increase = false;
